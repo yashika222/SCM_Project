@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/* css tranisition */
+.div10{ 
+   width: 100px ; height:100px; background-color: red; 
+   transition: width 2s; 
+}
+#div1{ 
+    transition-timing-function:ease-in-out;  /* linear,ease, ease-in, ease-out, ease-in-out */
+}
+.div1o:hover{width:300px ; height:300px; }
+
+.div2{ 
+   width: 100px ; height:100px; background-color: red; 
+   border:3px solid black;
+   transition: width 2s;  transition-delay: 2s;
+}
+
+.div2:hover{width:300px ; height:300px; }
+
+.div3{ 
+   width: 100px ; height:100px; background-color: red; 
+   border:2px solid black;
+   transition: width 2s height 2s;  transform: 2s;
+}
+
+.div3:hover{width:300px ; height:300px; 
+  transform: rotate(18deg);
+}
+
+.div4{
+    transition: width 2s, linear 1s;
+}  /*shorthand property */
+
+
+/* 2D transform */
+/* .div5{width:300px; height:100px; background-color: yellow;
+border:1px solid black; transform:translate(100px,100px);} */
+
+.div6{width:300px; height:100px; background-color: yellow;
+border:1px solid black; transform:rotate(20deg)}
+
+
+.div7{ margin:150px; width:300px; height:100px; background-color: yellow;
+border:1px solid black; transform:scalex(2);}
+
+.div8{ margin:150px; width:300px; height:100px; background-color: yellow;
+border:1px solid black; transform:skew(20deg,10deg);}
+
+button{ background-color: red; border: 2px solid black;
+   transition: width 2s; }
+   button:hover{width:300px ;  }
+
+   /* matrix */
+   .div9{ transform: matrix(1,0,-3,0,1,0);}
+
+   /* 3d transform */
+   .diva{
+      height: 200px; width: 200px;  background-color: aqua; align-content: center;
+      /* translate3d(0,0,80px); */
+       transition: width 2s; 
+   }
+   #myDiv {
+  transform: rotatex( 170deg);
+  transform: rotatey( 170deg);
+  transform: rotatez(130deg);
+}
+.divb{  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;}
+
+  @keyframes example{
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+        .divc{background-color: blue;
+        width: 200px;
+    height: 200px; }
+    .divc:hover{background-color: brown;
+    transition: rotate(20,50,70,180deg);}
+
+    #d1{border: 200px; width: 200px;
+background-color: pink;
+margin: 40px auto 0 auto }
+
+#d2{ border:5px solid green; height: 100px; width:100px; background-image: radial-gradient(blue,green, yellow);
+margin: 20px auto 0 auto;  }
+
+#d3{border: 200px; width: 200px;
+background-color: pink;
+margin: 40px auto o auto }
+
+#d4{ border:5px solid green; height: 200px; width:200px; background-image: radial-gradient(blue,green, yellow);
+margin: 20px auto o auto; transform:rotate3d(1,1,1,30deg); transition-property: all;
+transition-duration: 4s; }
+#d3:hover{ transform: rotate3d(160deg);}
+#d4:hover{transform:rotate3d(4,7,2,90deg);}
+
+#d5{border: 200px; width: 200px;
+background-color: pink;
+margin: 40px auto o auto }
+
+#d6{ border:5px solid green; height: 200px; width:200px; background-image: radial-gradient(blue,green, yellow);
+margin: 20px auto o auto; transform:rotate3d(1,1,1,30deg); transition-property: all;
+transition-duration: 4s; }
+#d5:hover{ transform: rotate3d(160deg);}
+#d6:hover{transform:translate3d(150px, 150px,0);}
+
+#d7{border : 5px solid black;
+height: 250px; width: 250px;
+background-color: aqua;margin: 40px auto 0 auto;
+perspective: 800px; transform: rotate3d(30deg);} 
+
+#d8{border:5px solid green ; height:200px; width: 200px;
+transform: rotatey(60deg);}
+
+
+#d9{border : 5px solid black;
+height: 250px; width: 250px;
+background-color: aqua;margin: 40px auto 0 auto;
+perspective: 800px; transform: rotate3d(30deg); transform-style: preserve-3d;} 
+
+#d10{border:5px solid green ; height:200px; width: 200px;
+transform: rotatey(100deg);}
+</style>
+<body>
+   <div class="div10" id="div1">helloo..................</div> 
+   <br>
+   <div class="div2" >hhhhhhhhhhhyjjjjjjjjjjjj</div>
+   <br>
+   <div class="div3">yuhbj,,,,,,,,,k</div>
+   <br>
+   <div class="div4">yyyyyyyyyyyyyyyf</div>
+
+   <br>
+   <!-- <div class="div5"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sint soluta aliquam necessitatibus, cum accusantium cupiditate minus accusamus alias vel veniam, eum et. Voluptates mollitia a nihil? Accusantium corrupti dicta modi nemo distinctio impedit deleniti. Reiciendis repellat nulla facere deserunt tempora eum nihil cumque culpa, consequuntur unde dolorum ratione nemo. Quae adipisci animi quam nulla velit magni numquam fuga aspernatur voluptatibus culpa aliquam, ratione, provident quod doloribus maiores, blanditiis corrupti consectetur. Temporibus nam explicabo cumque sapiente labore. Nemo voluptatem aperiam, necessitatibus harum reprehenderit aut dolore ad praesentium, expedita sapiente quo totam inventore hic aliquid? Illo repudiandae iure totam molestias cupiditate. Amet ipsa officiis, quos maxime incidunt, dolore, optio praesentium animi doloremque aperiam dolorem neque? </p></div> -->
+    <br>
+    <div class="div6"></div>
+
+<div class="div7"></div>
+<div class="div8"></div>
+
+<button>click here</button>
+
+<div class="div9">helllo</div>
+<br>
+
+<center><div class="diva" id="myDiv">helooooo!!!!!!!!!!</div></center>
+<div class="divb"></div>
+<br>
+<div class="divc"></div>
+<br>
+<div id="d1">hello 
+   <div id="d2">hello world</div>
+</div>
+<br>
+<div id="d3">
+   <div id="d4">hello</div>
+</div>
+<br>
+<div id="d5">
+   <div id="d6">hello</div>
+</div>
+
+<div id="d7"> 
+   <div id="d8"><img src="adidas-superstar.png.jpg" height="200px", width="200px"> </div>
+</div>
+
+<div id="d9"> 
+   <div id="d10"><img src="adidas-superstar.png.jpg" height="200px", width="200px"> </div>
+</div>
+
+</body>
+</html>
